@@ -1,0 +1,31 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '21'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Release Please
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: my-nextjs-app
+          changelog-types: "feat,fix,perf,docs,style,refactor,test,build,ci,chore,REVERT"
