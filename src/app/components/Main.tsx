@@ -4,7 +4,7 @@ import RightColumn from './RightColumn'
 
 const Main = () => {
   return (
-    <main className="flex h-[80%] w-full flex-row gap-2 border-2 border-black bg-emerald-400">
+    <main className="flex h-full w-full flex-row bg-emerald-400">
       <LeftColumn />
       <CenterColumn />
       <RightColumn />
