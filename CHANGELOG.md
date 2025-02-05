@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/mrcreel/nextjs_release-please/compare/v1.0.0...v1.1.0) (2025-02-05)
+
+
+### Features
+
+* **breadcrumb:** add dynamic breadcrumb to Header ([620bb82](https://github.com/mrcreel/nextjs_release-please/commit/620bb82122fdbc73332aa8f5ff68b72cc86f5b9a))
+
 ## 1.0.0 (2025-02-04)
 
 
